@@ -1,0 +1,374 @@
+.original-mobile-screen, .mobile-screen-tire-shop, .mobile-screen-parts-shop {
+    display: none;
+}
+
+@media screen and (max-width: 660px) {
+    .original-mobile-screen, .mobile-screen-tire-shop, .mobile-screen-parts-shop {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        position: fixed;
+        height: 90vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        transform: translateX(-100%);
+        transition: 0.5s ease-in-out;
+        overflow-y: auto;
+        padding-bottom: 25px;
+    }
+
+    .original-mobile-screen {
+        z-index: 900;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    #original-mobile-screen-exit {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .original-mobile-tire-exit-btn-container {
+        display: flex;
+        flex-direction: column;
+        height: 20px;
+        width: 100%;
+        align-items: flex-end;
+        padding: 10px 0 10px 0;
+        border-bottom: 1px solid white;
+    }
+
+    .mobile-screen-parts-shop {
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    .mobile-screen-tire-shop {
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    .mobile-nav-active-original {
+        transform: translateX(0);
+    }
+
+    .mobile-nav-active-shops {
+        transform: translateX(0);
+    }
+    
+    .original-mobile-screen h2 {
+        font-size: 0.8rem;
+        display: flex;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .original-mobile-screen h2 a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .original-mobile-screen div {
+        border-bottom: 1px solid white;
+        cursor: pointer;
+    }
+
+    .original-mobile-screen p a{
+        color: white;
+        text-decoration: none;
+        font-size: 0.8rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+    }
+
+    .original-mobile-screen p {
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .mobile-tire-exit-btn-container {
+        display: flex;
+        flex-direction: column;
+        height: 20px;
+        width: 100%;
+        align-items: flex-end;
+        padding: 10px 0 10px 0;
+        margin-bottom: 20px;
+        border-bottom: 1px solid white;
+    }
+    
+    .mobile-tire-exit-btn-container img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    
+    .mobile-parts-exit-btn-container img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .mobile-parts-exit-btn-container {
+        display: flex;
+        flex-direction: column;
+        height: 20px;
+        width: 100%;
+        align-items: flex-end;
+        padding: 10px 0 10px 0;
+        margin-bottom: 20px;
+        border-bottom: 1px solid white;
+    }
+
+    .mobile-nav-tire-shop-image-container {
+        height: 250px;
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .mobile-nav-parts-shop-image-container {
+        width: 90%;
+        height: 250px;
+        display: flex;
+        margin: 0 auto;
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .mobile-nav-tire-shop-image-container img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .mobile-nav-parts-shop-image-container img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .mobile-tires-heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid white;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .mobile-tires-heading h2 {
+        color: white;
+        font-size: 1.3rem;
+        text-shadow: 0 0 1px white, 0 0 1px white, 0 0 5px white;
+    }
+
+    .mobile-parts-heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid white;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .mobile-parts-heading h2 {
+        color: white;
+        font-size: 1.3rem;
+        text-shadow: 0 0 1px white, 0 0 1px white, 0 0 5px white;
+    }
+
+    .mobile-tires-main-heading {
+        width: 75%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px auto 20px auto;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+    }
+
+    .mobile-parts-main-heading {
+        width: 75%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px auto 20px auto;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+    }
+
+    .mobile-parts-main-heading h2 {
+        color: white;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 0 0 1px white, 0 0 1px white, 0 0 5px white;
+    }
+
+    .mobile-tires-main-heading h2 {
+        color: white;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 0 0 1px white, 0 0 1px white, 0 0 5px white;
+    }
+
+    .mobile-tire-search {
+        display: flex;
+        border-bottom: 1px solid white;
+        height: 30px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .mobile-tire-search h3 {
+        color: white;
+        font-size: 0.7rem;
+        margin-left: 20px;
+        transition: 0.4s ease-in-out;
+        text-shadow: 0 0 1px white, 0 0 1px white, 0 0 5px white;
+    }
+
+    .mobile-tire-search h3:hover {
+        color: red;
+        text-decoration: underline white;
+    }
+
+    .mobile-best-deals-container {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .mobile-explore-tires-container {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .mobile-explore-tires-container p{
+        color: white;
+        font-size: 0.7rem;
+        text-shadow: 0 0 1px white, 0 0 1px white, 0 0 5px white;
+        transition: 0.4s ease-in-out;
+    }
+
+    .mobile-best-deals-container p {
+        color: white;
+        font-size: 0.7rem;
+        text-shadow: 0 0 1px white, 0 0 1px white, 0 0 5px white;
+        transition: 0.4s ease-in-out;
+    }
+
+    .mobile-best-deals-container p:hover {
+        text-decoration: underline white;
+        color: red;
+    }
+
+    .mobile-explore-tires-container p:hover {
+        text-decoration: underline white;
+        color: red;
+    }
+
+    .mobile-best-deals-container img {
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        margin-left: 5px;
+    }
+
+    .mobile-explore-tires-container img {
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        margin-left: 5px;
+    }
+
+    .mobile-parts-search {
+        display: flex;
+        border-bottom: 1px solid white;
+        height: 30px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .mobile-parts-search h3 {
+        color: white;
+        font-size: 0.7rem;
+        margin-left: 20px;
+        transition: 0.4s ease-in-out;
+        text-shadow: 0 0 1px white, 0 0 1px white, 0 0 5px white;
+    }
+
+    .mobile-parts-search h3:hover {
+        color: red;
+        text-decoration: underline white;
+    }
+
+    .mobile-explore-parts-container img {
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        margin-left: 5px;
+    }
+
+    .mobile-parts-deals-container img {
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        margin-left: 5px;
+    }
+
+    .mobile-explore-parts-container p {
+        color: white;
+        font-size: 0.7rem;
+        text-shadow: 0 0 1px white, 0 0 1px white, 0 0 5px white;
+        transition: 0.4s ease-in-out;
+    }
+
+    .mobile-parts-deals-container p {
+        color: white;
+        font-size: 0.7rem;
+        text-shadow: 0 0 1px white, 0 0 1px white, 0 0 5px white;
+        transition: 0.4s ease-in-out;
+    }
+
+    .mobile-explore-parts-container p:hover {
+        text-decoration: underline white;
+        color: red;
+    }
+
+    .mobile-parts-deals-container p:hover {
+        text-decoration: underline white;
+        color: red;
+    }
+
+    .mobile-explore-parts-container {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .mobile-parts-deals-container {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+}

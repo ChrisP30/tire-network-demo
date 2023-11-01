@@ -1,0 +1,247 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    border: none;
+}
+
+.top-nav {
+    display: flex;
+    height: 40px;
+    background-color: black;
+    justify-content: flex-end;
+    z-index: 1000;
+
+}
+
+.main-nav {
+    display: flex;
+    height: 100px;
+    border-bottom: 1px solid grey;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    z-index:1000;
+    background-color: white;
+}
+
+.shopping-cart img {
+    width: 25px;
+    height: 25px;
+}
+
+.shopping-cart {
+    margin: 0 10px;
+}
+
+#about-link {
+    text-decoration: none;
+    color: black;
+}
+
+.main-navbar-items-container li {
+    margin: 0 15px;
+    list-style-type: none;
+    font-size: 0.8rem;
+}
+
+.main-navbar-items-container {
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 220px;
+    height: 68px;
+}
+
+.main-nav .logo-container {
+    margin-left: 30px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav ol {
+    display: flex;
+}
+
+.main-nav ol li {
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.main-nav ol li:hover {
+    color: red;
+}
+
+#about-link {
+    transition: 0.5s ease-in-out;
+}
+
+#about-link:hover {
+    color: red;
+}
+
+.top-nav p{
+    color: white;
+    justify-content: right;
+    align-items: right;
+    line-height: 0px;
+    font-size: 0.8rem;
+}
+
+.top-nav ol {
+    display: flex;
+
+}
+
+.top-nav li {
+    color: white;
+    list-style-type: none;
+    line-height: 0px;
+    font-size: 0.8rem;
+    margin: 0 15px;
+}
+
+.top-nav li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.top-nav li a:hover {
+    color: red;
+}
+
+.main-nav-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.mobile-screen-main-nav {
+    display: none;
+}
+
+.wide-screen-tire-shop {
+    height: 400px;
+    width: 100%;
+    background-color: lightgray;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    transform: translateY(-100%);
+    transition: 0.2s ease-in-out;
+    max-width: 1000px;
+    /* background-color: rgba(59, 57, 57, 0.9); */
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.wide-screen-parts-shop {
+    height: 400px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    transform: translateY(-200%);
+    transition: 0.2s ease-in-out;
+    max-width: 1000px;
+    /* background-color: rgba(59, 57, 57, 0.9); */
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.wide-screen-parts-shop, .wide-screen-tire-shop {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.show-tire-shop {
+    transform: translateY(0);
+}
+
+.show-parts-shop {
+    transform: translateY(0);
+}
+
+.top-nav, .main-nav {
+    position: relative;
+}
+
+#installation-link {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    transition: 0.5s ease-in-out;
+}
+
+#installation-link:hover {
+    color: red;
+}
+
+@media screen and (max-width: 660px) {
+    .top-nav {
+        display: none;
+    }
+    .main-nav {
+        display: none;
+    }
+
+    .wide-screen-parts-shop, .wide-screen-tire-shop {
+        display: none !important;
+    }
+
+    .mobile-screen-main-nav {
+        display: flex;
+        height: 50px;
+        border-bottom: 1px solid grey;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        justify-content: space-between;
+        align-items: center;
+        position: sticky !important;
+        top: 0;
+        background-color: white;
+        z-index: 999;
+    }
+
+    .hamburger-menu {
+        width: 50px;
+        height: 50px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hamburger-menu span {
+        width: 30px;
+        height: 3px;
+        margin: 2px auto;
+        background-color: grey;
+    }
+
+    .mobile-shopping-cart-container img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .mobile-shopping-cart-container {
+        margin-right: 20px;
+    }
+
+    .mobile-logo-container img {
+        width: 125px;
+        height: 40px;
+    }
+}

@@ -1,0 +1,261 @@
+.tire-shop-image-display-container {
+    height: 100%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 10px;
+    border-right: 2px solid black;
+}
+
+.parts-shop-image-display-container {
+    height: 100%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 10px;
+    border-right: 2px solid black;
+}
+
+.tire-shop-image-display-container img {
+    width: 75%;
+    height: 60%;
+    margin: 0 auto;
+    border: 2px solid grey;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.tire-shop-image-display-container h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+}
+
+.parts-shop-image-display-container img {
+    width: 75%;
+    height: 60%;
+    margin: 0 auto;
+    border-radius: 2px solid grey;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.parts-shop-image-display-container h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+}
+
+.tire-shop-options-container {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    border-right: 2px solid black;
+}
+
+.tire-shop-options-container h2 {
+    color: white;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 80%;
+    margin: 10px auto 0 auto;
+    padding-bottom: 8px;
+    border-bottom: 2px solid white;
+
+}
+
+.tire-shop-options-container li {
+    color: white;
+    list-style-type: none;
+    margin: 10px 0;
+    transition: 0.4s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.tire-shop-options-container li:hover {
+    text-decoration: underline white;
+    color: red;
+}
+
+.tire-shop-options-container ol {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10px auto 0 0;
+}
+
+.explore-tires-container img {
+    width: 20px;
+    height: 20px;
+}
+
+.explore-tires-container {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.explore-tires-container {
+    margin: 10px 20px 10px 20px;
+}
+
+.explore-tires-container p {
+    color: white;
+    font-size: 0.9rem;
+    transition: 0.4s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.explore-tires-container p:hover {
+    text-decoration: underline white;
+    color: red;
+}
+
+.best-deals-container img {
+    width: 20px;
+    height: 20px;
+}
+
+.best-deals-container p {
+    color: white;
+    font-size: 0.9rem;
+    transition: 0.4s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.best-deals-container p:hover {
+    text-decoration: underline white;
+    color: red;
+}
+
+.best-deals-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    transition: 0.5s all;
+}
+
+.tire-shop-content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.parts-shop-options-container {
+    width: 33%;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.explore-parts-container img {
+    width: 20px;
+    height: 20px;
+}
+
+.explore-parts-container p {
+    color: white;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.explore-parts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    padding: 10px;
+    margin: 10px 20px 10px 20px;
+}
+
+.parts-deals-container img {
+    width: 20px;
+    height: 20px;
+}
+
+.parts-deals-container p {
+    color: white;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.parts-deals-container p:hover {
+    text-decoration: underline white;
+    color: red;
+}
+
+.explore-parts-container p {
+    transition: 0.4s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.explore-parts-container p:hover {
+    text-decoration: underline white;
+    color: red;
+}
+
+.parts-deals-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    padding: 10px;
+    margin: 10px 20px 10px 20px;
+}
+
+.parts-shop-options-container {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    border-right: 2px solid black;
+}
+
+.parts-shop-options-container h2 {
+    color: white;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 80%;
+    margin: 10px auto 0 auto;
+    padding-bottom: 8px;
+    border-bottom: 2px solid white;
+}
+
+.parts-shop-options-container li {
+    color: white;
+    list-style-type: none;
+    margin: 10px 0;
+    transition: 0.4s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+
+}
+
+.parts-shop-options-container li:hover {
+    text-decoration: underline white;
+    color: red;
+}
+
+.parts-shop-options-container ol {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10px auto 0 0;
+}
